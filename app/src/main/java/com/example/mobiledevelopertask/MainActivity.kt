@@ -51,7 +51,6 @@ class MainActivity : AppCompatActivity() {
             val dog = listOfDogs[position]
             var inflater = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var dogView = inflater.inflate(R.layout.dog_ticket,null)
-            var allView = inflater.inflate(R.layout.activity_main,null)
             dogView.tvText.text = dog.name
             Picasso.get()
                 .load(dog.link)
